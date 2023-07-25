@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+body, button{
+    font-family: "Alata", sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+h1, h2{
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+}
+button{
+    background: none;
+    border: 3px solid hsl(0, 0%, 41%);
+    border-radius: .15em;
+    width: 157px;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    overflow: hidden;
+}
+header picture img{
+    width: 100%;
+}
+header nav, .layerOfBlack, .blockHeader, .part1MainSection, .layerBlack, .menus img, .part2Main h2, li:hover::after{
+    position: absolute;
+}
+header, .part1Main, .part2Main article, .menus, li{
+    position: relative;
+}
+header nav, .part2Main nav{
+    justify-content: space-around;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    top: 3.75em;
+    justify-content: space-around;
+    width: 100%;
+}
+header nav li:not(:last-child){
+    margin-right: 2em;
+}
+.layerOfBlack{
+    width: 100%;
+    height: 81.3vh;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+}
+
+.blockHeader{
+    top: 14em;
+    left: 200px;
+    outline: 1px solid white;
+    width: 649px;
+    height: 281px;
+    color: white;
+}
+.blockHeader article{
+    padding: 3em 0 45px 45px;
+}
+.blockHeader h1{
+    font-size: 70px;
+    max-width: 510px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.imgHero{
+    z-index: -1;
+    width: 100%;
+}
+
+.part1Main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+}
+.part1Main img{
+    z-index: -1;
+    transform: translateX(-30%);
+}
+.part1MainSection{
+    top: 35%;
+    left: 40%;
+    transform: translateX(20%);
+    max-width: 600px;
+    height: 390px;
+    background: white;
+}
+.part1MainSection article{
+    margin: 5.9em 0 0 5.9em;
+}
+.part1MainSection article p{
+    max-width: 30em;
+    line-height: 27px;
+    color: hsl(0, 0%, 55%);
+}
+.part1MainSection h1{
+    font-size: 45px;
+    max-width: 24.4em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.part2Main{
+    margin: 5em 0 11.5625em 0;
+    width: 100%;
+}
+.part2Main nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.part2Main nav h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.part2Main section{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 256px);
+    gap: 30px;
+}
+.part2Main article{
+    width: 256px;
+}
+.layerBlack{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .5));
+    z-index: 1;
+}
+.part2Main h2{
+    left: 40px;
+    bottom: 12px;
+    color: white;
+    max-width: 155px;
+    font-size: 30px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+footer{
+    background: black;
+    border-bottom: 1px solid transparent;
+    color: white;
+    padding: 2em 0;
+}
+footer p{
+    color: hsl(0, 0%, 55%);
+}
+footer ul{
+    padding: 0;
+}
+.logoFooter{
+    width: 145px;
+    height: 25px;
+}
+footer>section{
+    margin: 0 9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer ul li{
+    cursor: pointer;
+}
+footer section section:first-child nav{
+    margin-top: 1em;
+}
+footer section section:last-child ul{
+    justify-content: right;
+}
+footer ul li:not(:last-child){
+    margin-right: 1em;
+}
+
+.menus{
+    top: -10px;
+    z-index: 3;
+}
+.menus img{
+    display: none;
+    cursor: pointer;
+}
+img[src$="e.svg"]{
+    top: -2px;
+    left: 2px;
+    display: none;
+}
+
+button:hover{
+    transition: .7s;
+    border: none;
+    background: black;
+    color: white;
+}
+li:hover::after{
+    content: "";
+    bottom: -.5em;
+    left: 20%;
+    width: 2em;
+    height: 1px;
+    background: white;
+}
+footer section section:last-child li img:hover::after{
+    left: -10%;
+}
+
+@media (max-width: 1189px) {
+    .blockHeader{
+        top: 30%;
+        left: calc(23% - 11.5%);
+    }
+    .part1Main{
+        margin-top: 5em;
+    }
+    .part1Main img{
+        width: 700px;
+        height: 500px;
+        transform: translateX(-25%);
+    }
+    .part1MainSection{
+        transform: translateX(5%);
+        height: 330px;
+    }
+    .part1MainSection article{
+        margin: 4em 0 0 4em;
+    }
+    .part2Main{
+        margin: 5em 0;
+    }
+    .part2Main section{
+        gap: 20px;
+    }
+}
+@media (max-width: 1110px) {
+    .blockHeader{
+        left: calc(22% - 11.5%);
+    }
+    .part2Main section{
+        gap: 10px;
+    }
+}
+@media (max-width: 1080px) {
+    .part1Main img{
+        transform: translateX(-22%);
+        width: 600px;
+        height: 400px;
+    }
+    .part1MainSection{
+        width: 450px;
+    }
+    .part1MainSection article{
+        margin: 2.5em 0 0 2.5em;
+    }
+    .part2Main section{
+        gap: 5px;
+    }
+}
+@media (max-width: 1060px) {
+    .part2Main section{
+        grid-template-columns: repeat(4, 200px);
+    }
+    .part2Main section img, .part2Main article, .layerBlack{
+        width: 200px;
+    }
+    .layerBlack{
+        height: 351.56px;
+    }
+    footer>section{
+        margin: 0 4em;
+    }
+}
+@media (max-width: 1000px) {
+    .blockHeader{
+        width: 550px;
+        height: 200px;
+    }
+    .blockHeader article{
+        padding: 2em 0 0 2em;
+    }
+    .blockHeader h1{
+        font-size: 50px;
+        max-width: 400px;
+    }
+}
+@media (max-width: 890px) {
+    .blockHeader{
+        left: 6.5%;
+    }
+    .part1Main img{
+        width: 500px;
+        height: 300px;
+    }
+    .part1MainSection{
+        height: 260px;
+    }
+    .part1MainSection h1{
+        font-size: 35px;
+    }
+    .part1MainSection p{
+        font-size: .85em;
+    }
+    .part2Main{
+        margin-top: 10em;
+    }
+    footer>section{
+        margin: 0 2em;
+    }
+}
+@media (max-width: 850px) {
+    .layerOfBlack{
+        height: 500vh;
+    }
+    header picture img{
+        width: 100%;
+    }
+    .divLayerBlackHeader{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+    header ul{
+        display: none;
+        z-index: 2;
+        position: absolute;
+        flex-direction: column;
+        top: 2em;
+        left: .5em;
+    }
+    header ul li{
+        font-size: 40px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    header ul li:not(:last-child){
+        margin-bottom: 1em;
+    }
+    .menus img:first-child{
+        display: block;
+    }
+    .blockHeader{
+        top: 25em;
+        left: 6em;
+        width: 560px;
+        height: 250px;
+    }
+    .blockHeader article{
+        margin: .3em 0 0 .3em;
+    }
+    .blockHeader article h1{
+        font-size: 60px;
+        max-width: 500px;
+    }
+    .part1Main{
+        display: block;
+        text-align: center;
+    }
+    .part1Main img{
+        transform: translateX(0);
+        width: 500px;
+        height: 300px;
+    }
+    .part1MainSection{
+        position: static;
+        margin: auto;
+        transform: translateX(-5%);
+    }
+    .part1MainSection h1{
+        font-size: 35px;
+    }
+    .part1MainSection p{
+        font-size: .85em;
+    }
+    .part2Main{
+        margin-top: 0;
+    }
+    .part2Main nav button{
+        display: none;
+    }
+    .part2Main section{
+        row-gap: 50px;
+        grid-template-columns: 654px;
+    }
+    .part2Main article{
+        width: 654px;
+        height: 240px;
+    }
+    .part2Main picture img, .layerBlack{
+        width: 100%;
+        height: 240px;
+    }
+    .layerBlack{
+        background: linear-gradient(to left, transparent 50%, rgba(0, 0, 0, .5));
+    }
+    footer>section{
+        margin: 0 2em;
+    }
+}
+@media (max-width: 750px) {
+    .blockHeader{
+        top: 18em;
+        left: 5em;
+    }
+    footer section{
+        display: inline;
+        text-align: center;
+    }
+    footer>section section:last-child ul{
+        justify-content: center;
+    }
+    .logoFooter{
+        position: relative;
+        left: 35%;
+    }
+    footer>section section:first-child ul{
+        display: grid;
+    }
+    footer>section section:first-child ul li{
+        margin: 0 0 2em 0;
+    }
+}
+@media (max-width: 690px) {
+    .blockHeader{
+        width: 500px;
+        left: 2em;
+    }
+    .part2Main article{
+        width: 80%;
+        margin: auto;
+    }
+    .logoFooter{
+        left: 28%;
+    }
+}
+@media (max-width: 570px) {
+    .blockHeader{
+        width: 470px;
+        height: 230px;
+        left: 1.5em;
+    }
+    .blockHeader article{
+        padding: 1.2em 0 0 1.2em;
+    }
+    .part1Main img{
+        width: 90%;
+    }
+    .part2Main section article{
+        width: 70%;
+    }
+}
+@media (max-width: 530px) {
+    .blockHeader{
+        width: 350px;
+        height: 170px;
+        left: 4em;
+    }
+    .blockHeader article h1{
+        font-size: 40px;
+        max-width: 290px;
+    }
+}
+@media (max-width: 480px) {
+    .blockHeader{
+        left: 1.5em;
+    }
+    .part2Main section article{
+        width: 60%;
+    }
+    .part1Main p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 450px) {
+    .part1Main p{
+        font-size: 13px;
+    }
+    .part1Main h1{
+        font-size: 30px;
+    }
+    .part1MainSection{
+        width: auto;
+    }
+}
+@media (max-width: 430px) {
+    .part2Main article{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media (max-width: 420px) {
+    .layerBlack, .part2Main article img, .part2Main article{
+        width: 304px;
+        height: 140px;
+    }
+    .part2Main article{
+        margin: 0;
+    }
+    .part2Main section{
+        grid-template-columns: 304px;
+        grid-template-rows: repeat(8, 140px);
+    }
+}
+@media (max-width: 400px) {
+    .blockHeader{
+        left: .5em;
+        width: 326px;
+        height: 168px;
+    }
+    .blockHeader article{
+        margin: .3em 0 0 .3em;
+    }
+    .menus{
+        right: 2em;
+    }
+    .logoFooter{
+        left: 15%;
+    }
+}
+@media (max-width: 375px) {
+    .blockHeader{
+        top: 13em;
+        width: 300px;
+        height: 198px;
+    }
+}
