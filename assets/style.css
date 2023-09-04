@@ -61,7 +61,7 @@ header nav li:not(:last-child){
 }
 .layerOfBlack{
     width: 100%;
-    height: 81.3vh;
+    min-height: 100vh;
     background: rgba(0, 0, 0, .4);
     top: 0;
 }
@@ -217,7 +217,7 @@ button:hover{
 li:hover::after{
     content: "";
     bottom: -.5em;
-    left: 20%;
+    transform: translateX(-2.5em);
     width: 2em;
     height: 1px;
     background: white;
@@ -330,7 +330,7 @@ footer section section:last-child li img:hover::after{
 }
 @media (max-width: 850px) {
     .layerOfBlack{
-        height: 500vh;
+        height: 125vh;
     }
     header picture img{
         width: 100%;
